@@ -158,10 +158,6 @@ padding-right: 50px;
   color: #777777;
   cursor: pointer;
 }
-.toggle .tabs .tab.active {
-  /*color: #669999;
-  border-bottom: 3px solid #669999;*/
-}
 .toggle .panels .panel {
   padding: 20px 10px;
   display: none;
@@ -178,6 +174,9 @@ padding-right: 50px;
 .active {
   background-color: white;
   border-bottom: 3px solid #669999;
+  width: 100%;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
 }
 .contain {
 	width: 75%;
@@ -307,6 +306,9 @@ span {
 }
 .center {
   text-align: center;
+}
+.active {
+
 }
 /*** ================= BEGIN MEDIA QUERIES ====================== */
 @media only screen and (min-width: 1250px) {
