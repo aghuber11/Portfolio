@@ -1,7 +1,9 @@
+var toggle = document.getElementsByClassName("toggle");
 
+var toggleContent = function() {
+  console.log(this);
+};
 
-var toggle = document.getElementsByClassName('toggle');
-
-toggle.addEventListener("click", function() {
-  
-});
+for (var i = 0; i < toggle.length; i++) {
+    toggle[i].addEventListener('click', toggleContent, false);
+}
