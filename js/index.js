@@ -1,8 +1,8 @@
 var toggle = document.getElementsByClassName("toggle");
 
 const toggleContent = function() {
-  var clickTarget = this.getAttribute("data");
-  slideCheck(clickTarget);
+  var clickTargetData = this.getAttribute("data");
+  slideCheck(clickTargetData);
 };
 
 function slideCheck(clickTarget) {
@@ -17,7 +17,7 @@ function slideCheck(clickTarget) {
     design.classList.toggle("active");
   }
   else if (clickTarget == "contact") {
-    contact.classList.toggle("active"); 
+    contact.classList.toggle("active");
   }
   else {
     //do nothing
